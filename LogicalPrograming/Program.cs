@@ -9,7 +9,7 @@ namespace LogicalPrograming
             bool flag = true;
             while (flag)
             {
-                Console.Write("1.Fibonacci\n2.Perfect number\n3.Prime check\n4.exit\nEnter your option to execute: ");
+                Console.Write("1.Fibonacci\n2.Perfect number\n3.Prime check\n4.Reverse of number\n5.exit\nEnter your option to execute: ");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,12 @@ namespace LogicalPrograming
                         prime.primeCheck(number);
                         break;
                     case 4:
+                        ReverseNumber reverseNumber = new ReverseNumber();
+                        Console.WriteLine("Enter the number");
+                        int rev = Convert.ToInt32(Console.ReadLine());
+                        reverseNumber.reverse(rev);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
