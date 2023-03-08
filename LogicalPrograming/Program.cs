@@ -6,6 +6,24 @@ namespace LogicalPrograming
         static void Main(String[] args)
         {
             Console.WriteLine("Welcome to logical programming");
+            bool flag = true;
+            while (flag)
+            {
+                Console.Write("1.Fibonacci\n2.exit\nEnter your option to execute: ");
+                int option=Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        Fibonacci fib=new Fibonacci();
+                        Console.WriteLine("Enter the number for fibonacci");
+                        int num= Convert.ToInt32(Console.ReadLine());
+                        fib.fibonacciSeries(num);
+                        break;
+                    case 2:
+                        flag = false;
+                        break;
+                }
+            }
         }
     }
 }
