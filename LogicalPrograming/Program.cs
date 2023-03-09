@@ -9,7 +9,7 @@ namespace LogicalPrograming
             bool flag = true;
             while (flag)
             {
-                Console.Write("1.Fibonacci\n2.Perfect number\n3.Prime check\n4.Reverse of number\n5.exit\nEnter your option to execute: ");
+                Console.Write("1.Fibonacci\n2.Perfect number\n3.Prime check\n4.Reverse of number\n5.Coupon number\n6.exit\nEnter your option to execute: ");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,6 +38,12 @@ namespace LogicalPrograming
                         reverseNumber.reverse(rev);
                         break;
                     case 5:
+                        CouponNumber coupon = new CouponNumber();
+                        Console.WriteLine("Enter the number");
+                        int variable = Convert.ToInt32(Console.ReadLine());
+                        coupon.couponGenerate(variable);
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
