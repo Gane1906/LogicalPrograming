@@ -8,7 +8,7 @@ namespace LogicalPrograming
 {
     public class CouponNumber
     { 
-        public void CouponGenerator(int num)
+       public void CouponGenerator(int num)
         {
             int count = 0;
             int[] arr = new int[10];
